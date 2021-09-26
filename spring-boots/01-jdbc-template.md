@@ -7,6 +7,18 @@ spring.datasource.url=jdbc:mysql://neekystudio.com:3306/tempdb
 spring.datasource.username=appuser
 spring.datasource.password=dbma@0352
 ```
+
+如果使用的是 yaml 配置的话，这样写也行。
+
+```yaml
+spring:
+  datasource:
+    url: jdbc:mysql://neekystudio.com:3306/tempdb
+    username: appuser
+    password: dbma@0352
+    driver-class-name: com.mysql.cj.jdbc.Driver
+```
+
 ---
 
 2、pom.xml 中添加如下内容
